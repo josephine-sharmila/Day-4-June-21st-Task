@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> IIFE Question E</title>
+    </head>
+    <body>
+        <script>
+            
+            //e. Return all the palindromes in an array
+
+            (  function (arr, n)
+        {
+            // Traversing each element of the array
+            // and check if it is palindrome or not
+            for (let i = 0; i < n; i++)
+            {
+                let ans = isPalindrome(arr[i]);
+                if (ans == false)
+                    return false;
+            }
+            return true;
+        })([1,2,3] , 3)
+
+           
+
+
+        </script>
+    </body>
+</html>
