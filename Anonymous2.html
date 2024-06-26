@@ -7,14 +7,18 @@
             
             //b. Convert all the strings to title caps in a string array
 
-            var str="my name is josephine";
-            var i = function(str) {
-                str = str.toLowerCase().split('');
-            for (var i = 0; i < str.length; i++) {
-                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            
+            let string_to_upper_case = function(data){
+                data = data.toLowerCase().split('');
+            for (let i = 0; i < data.length; i++) {
+                data[i] = data[i].charAt(0).toUpperCase() + data[i].slice(1);
             }
-            return str.join('');
-        } (str);
+            return data.join('');
+        };
+        
+        let data = "my name is josephine";
+
+        console.log(string_to_upper_case(data));
 
        
 
